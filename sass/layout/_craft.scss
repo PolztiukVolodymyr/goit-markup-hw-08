@@ -1,0 +1,35 @@
+.list-craft {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-craft__box {
+  position: relative;
+}
+
+.craft-img {
+  display: block;
+}
+
+.list-craft__row {
+  position: absolute;
+  bottom: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.list-craft__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}

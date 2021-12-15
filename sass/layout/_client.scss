@@ -1,0 +1,42 @@
+.client {
+  display: flex;
+}
+
+.client__list {
+  display: flex;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.client__icon {
+  width: 170px;
+  height: 92px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+  }
+}
+
+.section-title {
+  color: var(--title-text-color);
+
+  margin-bottom: 50px;
+  margin-top: 0px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}

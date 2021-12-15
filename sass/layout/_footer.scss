@@ -1,0 +1,118 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-address__item {
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.list-address__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.list-address__link--grey {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.list-address__item--mail {
+  margin-bottom: 9px;
+}
+
+.footer-inner {
+  margin-top: 10px;
+  margin-left: 85px;
+}
+
+.title-footer {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.socials-list--footer {
+  display: flex;
+}
+
+.socials-list__item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+
+.socials-list__item:first-child {
+  margin-left: 0;
+}
+
+.socials-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socials-list__link--dark {
+  color: #afb1b8;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.socials-list__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.socials-list__icon--dark {
+  fill: var(--second-text-color);
+}
+
+.subscription-row {
+  margin-top: 10px;
+  margin-left: 93px;
+}
+
+.subscription {
+  width: 350px;
+  height: 50px;
+  margin-right: 12px;
+  background-color: #2f303a;
+  color: #ffffff;
+  padding: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,21 @@
+.logo {
+  font-family: var(--logo-font);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo__part {
+  color: var(--accent-color);
+}
+
+.logo--dark {
+  color: var(--title-text-color);
+}
+
+.logo--light {
+  color: var(--second-text-color);
+}
