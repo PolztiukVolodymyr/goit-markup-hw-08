@@ -1,16 +1,19 @@
 .client {
   display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .client__list {
-  display: flex;
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+  // display: flex;
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+  margin: 15px;
 }
 
 .client__icon {
-  width: 170px;
+  width: 210px;
   height: 92px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
@@ -25,6 +28,12 @@
     fill: var(--accent-color);
     border: 1px solid var(--accent-color);
     cursor: pointer;
+  }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 

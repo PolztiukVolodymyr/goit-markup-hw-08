@@ -1,3 +1,9 @@
+.craft {
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
 .list-craft {
   display: flex;
   justify-content: space-between;
