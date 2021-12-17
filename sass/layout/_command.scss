@@ -3,11 +3,10 @@
 }
 
 .list-team {
-  // display: flex;
-  // justify-content: space-between;
   margin: -15px;
   @media screen and (min-width: 768px) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -26,15 +25,18 @@
   }
 }
 
+.list-team__img {
+  display: block;
+  width: 100%;
+}
+
 .list-team__wrap {
   border: 1px solid #eeeeee;
   border-top: none;
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: var(--second-text-color);
-  width: 270px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 }
 
 .list-team__name {
