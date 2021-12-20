@@ -3,6 +3,7 @@
   padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
     padding-bottom: 0;
+    padding-top: 94px;
   }
 }
 
@@ -15,8 +16,10 @@
 }
 
 .list-benefits__item {
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 1200px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
 }
 
