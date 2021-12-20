@@ -16,20 +16,27 @@
 
   <body>
 
-    <!-----Шапка ----->
-<!-- 
+    <!-----Header ----->
+
     <header class="header">
       <div class="wrap-nav container">
         <nav class="main-nav">
           <a href="#" class="logo logo--dark"><span class="logo__part">Web</span>Studio</a>
+
           <ul class="site-nav list">
 
             <li class="site-nav__item">
-              <a href="" class="site-nav__link site-nav__link--stydio">Студия</a></li>
+              <a href="*" class="site-nav__link site-nav__link--stydio">Студия</a>
+            </li>
+
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+
             <li class="site-nav__item">
-              <a href="" class="site-nav__link">Контакты</a></li>
+               <a href="*" class="site-nav__link">Контакты</a>
+            </li>
+
           </ul>
         </nav>
 
@@ -40,7 +47,7 @@
               <svg class="list-contacts__icon" width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-envelope"></use>
               </svg>info@devstudio.com</a>
-         </li>
+          </li>
 
 
           <li class="list-contacts__item">
@@ -51,9 +58,39 @@
           </li>
 
         </ul>
+        <button type="button" class="mob-btn-open">
+          <svg class="mob-icon-open">
+            <use href="./images/symbol-defs.svg#icon-mob">
+            </use>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="mob-menu">
+        <button type="button" class="mob-btn-close">
+          <svg class="mob-icon-close">
+            <use href="./images/symbol-defs.svg#icon-Vector">
+            </use>
+          </svg>
+        </button>
+            <ul class="mob-site-nav list">
+                    
+                <li class="mob-site-nav__item">
+                  <a href="*" class="mob-site-nav__link mob-site-nav__link--stydio">Студия</a>
+                </li>
+
+                <li class="mob-site-nav__item">
+                   <a href="./portfolio.html" class="mob-site-nav__link">Портфолио</a>
+                </li>
+
+                 <li class="mob-site-nav__item">
+                    <a href="*" class="mob-site-nav__link">Контакты</a>
+                 </li>
+            </ul>
+
       </div>
     </header>
-    <main> -->
+    <main>
 
       <!-----Hero----->
 
@@ -557,7 +594,7 @@
        <!-----------Модалка---------------->
 
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="closing-button" data-modal-close>
           <svg class="closing-button__icon">
@@ -623,4 +660,4 @@
 
     <script src="./js/modal.js"></script>
   </body>
-</html> -->
+</html>

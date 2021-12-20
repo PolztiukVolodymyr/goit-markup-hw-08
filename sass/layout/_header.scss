@@ -15,11 +15,15 @@
 /* site nav */
 
 .site-nav {
-  margin-left: 93px;
-  display: flex;
-  position: relative;
-  .site-nav__link {
-    color: var(--title-text-color);
+  display: none;
+  @media screen and (min-width: 768px) {
+    margin-left: 93px;
+    display: flex;
+    position: relative;
+    .site-nav__link {
+      color: var(--title-text-color);
+    }
+    margin-left: 88px;
   }
 }
 
@@ -98,14 +102,42 @@
 }
 
 .list-contacts {
-  display: flex;
-  margin-left: auto;
-  .list-contacts__item:not(:last-child) {
-    margin-right: 50px;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: auto;
+    .list-contacts__item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .list-contacts__icon {
   fill: currentColor;
   margin-right: 10px;
+}
+
+// .mob-menu {
+//   position: absolute;
+//   background-color: #ffffff;
+//   top: 0;
+//   width: 100vw;
+//   height: 100vh;
+// }
+
+.mob-btn-open {
+  background-color: #ffffff;
+}
+.mob-btn-close {
+  background-color: #ffffff;
+}
+
+.mob-icon-open {
+  width: 24px;
+  height: 16px;
+}
+
+.mob-icon-close {
+  width: 19px;
+  height: 19px;
 }
