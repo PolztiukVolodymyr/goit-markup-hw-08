@@ -117,19 +117,25 @@
   margin-right: 10px;
 }
 
-// .mob-menu {
-//   position: absolute;
-//   background-color: #ffffff;
-//   top: 0;
-//   width: 100vw;
-//   height: 100vh;
-// }
+.mob-menu {
+  position: fixed;
+  background-color: #ffffff;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
 
 .mob-btn-open {
   background-color: #ffffff;
 }
 .mob-btn-close {
   background-color: #ffffff;
+  position: absolute;
+  top: 20px;
+  right: 25px;
 }
 
 .mob-icon-open {
@@ -140,4 +146,19 @@
 .mob-icon-close {
   width: 19px;
   height: 19px;
+}
+
+.mob-nav__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.mob-nav__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: var(--title-text-color);
 }
