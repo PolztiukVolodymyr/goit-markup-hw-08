@@ -18,7 +18,7 @@
 
     <!-----Header ----->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="wrap-nav container">
         <nav class="main-nav">
           <a href="#" class="logo logo--dark"><span class="logo__part">Web</span>Studio</a>
@@ -40,7 +40,9 @@
           </ul>
         </nav>
 
-        <ul class="list-contacts list">
+       
+
+         <ul class="list-contacts list">
 
           <li class="list-contacts__item">
             <a href="mailto:info@devstudio.com" class="list-contacts__link">
@@ -57,8 +59,10 @@
               </svg>+38 096 111 11 11</a>
           </li>
 
-        </ul>
-        <button type="button" class="mob-btn-open">
+         </ul>
+        
+
+        <button type="button" class="mob-btn-open js-open-menu">
           <svg class="mob-icon-open">
             <use href="./images/symbol-defs.svg#icon-mob">
             </use>
@@ -66,9 +70,10 @@
         </button>
       </div>
       
-      <div class="mob-menu">
+      <div class="mob-menu js-menu-container is-open">
         <div class="container">
-            <button type="button" class="mob-btn-close">
+          <div class="mob-menu-top">
+            <button type="button" class="mob-btn-close js-close-menu">
              <svg class="mob-icon-close">
                 <use href="./images/symbol-defs.svg#icon-Vector">
                 </use>
@@ -88,32 +93,33 @@
                     <a href="*" class="mob-nav__link">Контакты</a>
                  </li>
             </ul>
+          </div>
+          <div class="mob-menu-bottom">
             
             <ul class="mob-contacts list">
-            
+
               <li class="mob-contacts__item">
-                <a href="mailto:info@devstudio.com" class="mob-contacts__link">
-                  info@devstudio.com</a>
-              </li>
-            
-            
-              <li class="mob-contacts__item">
-                <a href="tel:+380961111111" class="mob-contacts__link">
+                <a href="tel:+380961111111" class="mob-contacts__tel">
                   +38 096 111 11 11</a>
               </li>
             
+              <li class="mob-contacts__item">
+                <a href="mailto:info@devstudio.com" class="mob-contacts__mail">
+                  info@devstudio.com</a>
+              </li>
+                                 
             </ul>
 
             <ul class="mob-socials list">
             
               <li class="mob-socials__item">
-                <a href="#" class="mob-list-socials__link">
+                <a href="#" class="mob-socials__link">
                   Instagram</a>
               </li>
             
             
               <li class="mob-socials__item">
-                <a href="#" class="mob-list-socials__link">
+                <a href="#" class="mob-socials__link">
                   Twitter</a>
               </li>
 
@@ -129,9 +135,10 @@
               </li>
             
             </ul>
+            </div>
           </div>
       </div>
-    </header> -->
+    </header>
     <main>
 
       <!-----Hero----->
@@ -699,7 +706,11 @@
         </form>
       </div>
     </div>
-
+    <!-- <script src="./js/menu.js"></script> -->
     <script src="./js/modal.js"></script>
+      <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+      <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
