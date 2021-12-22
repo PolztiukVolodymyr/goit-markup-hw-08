@@ -209,6 +209,12 @@ img {
   justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
+
 .mob-menu.is-open {
   transform: translateX(-100%);
   transition: transform 250ms ease-in-out;
@@ -297,6 +303,12 @@ img {
 .mob-socials {
   display: flex;
   margin-top: 64px;
+}
+
+@media screen and (max-width: 375px) {
+  .mob-socials {
+    display: block;
+  }
 }
 
 .mob-socials__item:not(:first-child) {
@@ -1117,10 +1129,18 @@ button {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: var(--second-text-color);
-  width: 528px;
-  height: 581px;
-  border-radius: 4px;
   padding: 40px;
+  width: 450px;
+  height: 609px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -1216,10 +1236,17 @@ button {
 .checkbox__text {
   display: flex;
   align-items: center;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--primery-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox__text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .checkbox__item {
