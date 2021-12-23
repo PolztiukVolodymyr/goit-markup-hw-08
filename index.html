@@ -227,12 +227,21 @@
           <li>
             <a href="#">
               <div class="list-craft__box">
-              <img class="craft-img" src="./images/img11.jpg" 
-                    alt="Рабочий стол фронтендера" width="370"/>
-                 
-                    <div class="list-craft__row">
-                    <p class="list-craft__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
-                    </div>
+             <picture>
+             <source 
+              srcset="
+            ./images/craft/craft-desctop1x.jpg 1x,
+            ./images/craft/craft-desctop2x.jpg 2x"
+             media="(min-width: 1200px)">
+
+            <img src="./images/craft/craft-desctop1x.jpg" 
+            alt="Рабочий стол фронтендера"/>
+           
+            </picture>
+             
+              <div class="list-craft__row">
+                <p class="list-craft__text">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</p>
+              </div>
                </div>
             </a>
           </li>
@@ -241,8 +250,17 @@
           <li>
             <a href="#">
               <div class="list-craft__box">
-                <img class="craft-img" src="./images/img12.jpg" 
-                  alt="Телефоны на мониторе ноутбука" width="370" />
+             <picture>
+             <source 
+              srcset="
+            ./images/craft/craft-mob1x.jpg 1x,
+            ./images/craft/craft-mob2x.jpg 2x"
+             media="(min-width: 1200px)">
+               <img src="./images/craft/craft-mob1x.jpg" 
+                  alt="Телефоны на мониторе ноутбука"/>
+           
+            </picture>
+              
               
                  <div class="list-craft__row">
                    <p class="list-craft__text">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</p>
@@ -255,8 +273,17 @@
           <li>
               <a href="#">
                 <div class="list-craft__box">
-                 <img class="craft-img" src="./images/img13.jpg" 
-                    alt="Планшет на фоне стола" width="370" />
+           <picture>
+             <source 
+              srcset="
+            ./images/craft/craft-design1x.jpg 1x,
+            ./images/craft/craft-design2x.jpg 2x"
+             media="(min-width: 1200px)">
+             <img src="./images/craft/craft-design1x.jpg" 
+                    alt="Планшет на фоне стола"/>
+           
+            </picture>
+                
                      <div class="list-craft__row">
                       <p class="list-craft__text">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</p>
                      </div>
@@ -275,7 +302,28 @@
         <ul class="list list-team">
 
           <li class="list-team__item">
-            <img src="./images/img21.jpg" alt="Игорь Демьяненко" class="list-team__img"/>
+           <picture>
+             <source 
+              srcset="
+            ./images/comand/igordem-des1x.jpg 1x,
+            ./images/comand/igordem-des2x.jpg 2x"
+             media="(min-width: 1200px)">
+
+             <source srcset="
+              ./images/comand/igordem-tab1x.jpg 1x,
+              ./images/comand/igordem-tab2x.jpg 2x"
+               media="(min-width: 768px)">
+
+             <source srcset="
+              ./images/comand/igordem-mob1x.jpg 1x,
+              ./images/comand/igordem-mob2x.jpg 2x"
+               media="(min-width: 320px)">
+
+              <img src="./images/comand/igordem-mob1x.jpg"
+               alt="Игорь Демьяненко" />
+           
+            </picture>
+            
             <div class="list-team__wrap">
                <h3 class="list-team__name">Игорь Демьяненко</h3>
                <p class="list-team__position">Product Designer</p>
@@ -325,14 +373,27 @@
            
 
           <li class="list-team__item">
-            <picture>
+           <picture>
+             <source 
+              srcset="
+            ./images/comand/olgarep-des1x.jpg 1x,
+            ./images/comand/olgarep-des2x.jpg 2x"
+             media="(min-width: 1200px)">
 
-            
-            </picture>
+             <source srcset="
+              ./images/comand/olgarep-tab1x.jpg 1x,
+              ./images/comand/olgarep-tab2x.jpg 2x"
+               media="(min-width: 768px)">
+
+             <source srcset="
+              ./images/comand/olgarep-mob1x.jpg 1x,
+              ./images/comand/olgarep-mob2x.jpg 2x"
+               media="(min-width: 320px)">
             <img
-            srcset="./images/comand/olga rep-des1x.jpg"
-             src="./images/img22.jpg"
+             src="./images/comand/olgarep-mob1x.jpg"
              alt="Ольга Репина"/>
+            </picture>
+
             <div class="list-team__wrap">
               <h3 class="list-team__name">Ольга Репина</h3>
               <p class="list-team__position">Frontend Developer</p>
@@ -382,7 +443,26 @@
 
 
           <li class="list-team__item">
-            <img src="./images/img23.jpg" alt="Николай Тарасов" class="list-team__img"/>
+            <picture>
+             <source 
+              srcset="
+            ./images/comand/nikoltar-des1x.jpg 1x,
+            ./images/comand/nikoltar-des2x.jpg 2x"
+             media="(min-width: 1200px)">
+
+             <source srcset="
+              ./images/comand/nikoltar-tab1x.jpg 1x,
+              ./images/comand/nikoltar-tab2x.jpg 2x"
+               media="(min-width: 768px)">
+
+             <source srcset="
+              ./images/comand/nikoltar-mob1x.jpg 1x,
+              ./images/comand/nikoltar-mob2x.jpg 2x"
+               media="(min-width: 320px)">
+              <img src="./images/comand/nikoltar-mob1x.jpg 1x" 
+              alt="Николай Тарасов"/>
+            </picture>           
+            
             <div class="list-team__wrap">
               <h3 class="list-team__name">Николай Тарасов</h3>
               <p class="list-team__position">Marketing</p>
@@ -432,7 +512,26 @@
 
 
           <li class="list-team__item">
-            <img src="./images/img24.jpg" alt="Михаил Ермаков" class="list-team__img" />
+           <picture>
+             <source 
+              srcset="
+            ./images/comand/micherm-des1x.jpg 1x,
+            ./images/comand/micherm-des2x.jpg 2x"
+             media="(min-width: 1200px)">
+
+             <source srcset="
+              ./images/comand/micherm-tab1x.jpg 1x,
+              ./images/comand/micherm-tab2x.jpg 2x"
+               media="(min-width: 768px)">
+
+             <source srcset="
+              ./images/comand/micherm-mob1x.jpg 1x,
+              ./images/comand/micherm-mob2x.jpg 2x"
+               media="(min-width: 320px)">
+              <img src="./images/comand/micherm-mob1x.jpg 1x"
+               alt="Михаил Ермаков" />
+            </picture>
+            
             <div class="list-team__wrap">
               <h3 class="list-team__name">Михаил Ермаков</h3>
               <p class="list-team__position">UI Designer</p>
