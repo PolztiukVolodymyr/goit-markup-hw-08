@@ -193,13 +193,14 @@ img {
   position: fixed;
   background-color: #ffffff;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2;
   padding-top: 48px;
   padding-bottom: 48px;
   transition: transform 250ms ease-in-out;
-  transform: translateX(0);
+  transform: translateX(-100%);
 }
 
 .mob-menu .container {
@@ -216,7 +217,7 @@ img {
 }
 
 .mob-menu.is-open {
-  transform: translateX(-100%);
+  transform: translateX(0);
   transition: transform 250ms ease-in-out;
 }
 
@@ -888,9 +889,17 @@ button {
 }
 
 .link-gallery {
-  display: inline-block;
+  display: block;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1999px) {
+  .link-gallery {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 .link-gallery:hover, .link-gallery:focus {
@@ -940,12 +949,28 @@ button {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .link-gallery__text {
+    max-width: 306px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .link-gallery__text {
+    max-width: 322px;
+  }
+}
+
 .work-name {
   border: 1px solid #eeeeee;
   border-top: none;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1999px) {
+  .work-name {
+    flex-grow: 1;
+  }
 }
 
 .work-name__title {

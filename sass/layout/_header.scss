@@ -145,14 +145,15 @@
   position: fixed;
   background-color: #ffffff;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   z-index: 2;
   padding-top: 48px;
   padding-bottom: 48px;
   transition: transform 250ms ease-in-out;
+  transform: translateX(-100%);
 
-  transform: translateX(0);
   .container {
     height: 100%;
     display: flex;
@@ -165,7 +166,7 @@
 }
 
 .mob-menu.is-open {
-  transform: translateX(-100%);
+  transform: translateX(0);
   transition: transform 250ms ease-in-out;
 }
 
