@@ -458,9 +458,19 @@ img {
   }
 }
 
-@media screen and (max-width: 1200px) {
+.list-benefits__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .list-benefits__item:nth-child(n + 2) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .list-benefits__item:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 }
 
@@ -783,12 +793,13 @@ button {
 .list-button {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
   .list-button {
-    margin-top: 30px;
+    margin-top: 0;
+    margin-bottom: 45px;
     justify-content: center;
   }
 }
@@ -796,6 +807,7 @@ button {
 @media screen and (min-width: 1200px) {
   .list-button {
     margin-bottom: 50px;
+    margin-top: 0;
   }
 }
 
@@ -1364,7 +1376,21 @@ button {
 }
 
 .section {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-bottom: 60px;
+    padding-top: px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
