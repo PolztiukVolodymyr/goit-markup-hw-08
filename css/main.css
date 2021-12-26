@@ -603,7 +603,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .list-team__item {
-    flex-basis: calc((100% - 180px) / 4);
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
